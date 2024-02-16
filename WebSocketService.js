@@ -21,7 +21,7 @@ const connectWebSocket = setMessages => {
 
   try {
     client = webstomp.client(
-      'wss://api-alb-beta.rainntest.com/hotlines/ohl/websocket',
+      'wss://socket_url',
       {heartbeat: {incoming: 15000, outgoing: 15000}, debug: true},
     );
   } catch {
